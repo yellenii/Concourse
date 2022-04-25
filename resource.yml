@@ -5,6 +5,9 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
+  #inputs:
+  #  - name: resource-tutorial
+  #  - name: timer
+
 run:
-  path: echo
-  args: [hello yeeun]
+  path: resource-tutorial/web-task.sh
