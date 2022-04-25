@@ -8,4 +8,3 @@ image_resource:
 run:
   path: echo
   args: [hello yeeun]
-
