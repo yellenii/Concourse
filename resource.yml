@@ -10,4 +10,4 @@ image_resource:
 
 run:
   path: sh
-  args: ["./web-task.sh"]
+  args: ["./resource-tutorial/web-task.sh"]
