@@ -10,4 +10,5 @@ image_resource:
   #  - name: timer
 
 run:
-  path: resource-tutorial/web-task.sh
+  path: /bin/sh
+  args: ["./web-task.sh"]
