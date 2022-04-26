@@ -5,9 +5,8 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
-  #inputs:
-  #  - name: resource-tutorial
-  #  - name: timer
+  inputs:
+    - name: concourse
 
 run:
   path: sh
