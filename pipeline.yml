@@ -4,13 +4,18 @@ resources:
     type: git
     source:
       uri: https://github.com/yellenii/concourse.git
-      branch: develop
+      branch: main
+  - name: timer
+    type: time
+    source:
+      interval: 1m
 
 jobs:
   - name: job-hello-world
     public: true
     plan:
       - get: resource-tutorial
+      - get: timer
+        trigger: true
       - task: hello-world
-        file: resource-tutorial/tutorials/basic/task-hello-world/task_hello_world.yml
-
+        file: resource-tutorial/resource.yml
