@@ -16,6 +16,9 @@ jobs:
     plan:
       - get: resource-tutorial
       - task: hello-world
+        config:
+          inputs:
+            - name: resource-tutorial
         #        config:
         #        platform: linux
         #        image_resource:
