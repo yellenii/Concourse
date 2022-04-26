@@ -15,8 +15,16 @@ jobs:
     public: true
     plan:
       - get: resource-tutorial
+      - get: timer
+        trigger: true
       - task: hello-world
         config:
+          platform: linux
+          inputs:
+            - name: resource-tutorial
+          run:
+              path: sh
+              args: ["./resource-tutorial/web-task.sh"]
                 #  inputs:
            
              # - name: resource-tutorial
@@ -31,6 +39,4 @@ jobs:
         #        run:
         #          path: resource-tutorial/web-task.sh
         #          
-        file: resource-tutorial/resource.yml
-      - get: timer
-        trigger: true
+        ##file: resource-tutorial/resource.yml
