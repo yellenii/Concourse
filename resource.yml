@@ -11,4 +11,4 @@ image_resource:
 
 run:
   path: /bin/sh
-  args: ["./web-task.sh"]
+  args: ["/home/ubuntu/concourse/web-task.sh"]
