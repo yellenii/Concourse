@@ -2,5 +2,5 @@
   
 set -e
 
-sudo sed -i 's/yeeun/world/' /var/www/html/index.html
+sudo sed -i 's/world/yeeun/' /var/www/html/index.html
 
