@@ -17,8 +17,9 @@ jobs:
       - get: resource-tutorial
       - task: hello-world
         config:
-          inputs:
-            - name: resource-tutorial
+                #  inputs:
+           
+             # - name: resource-tutorial
         #        config:
         #        platform: linux
         #        image_resource:
