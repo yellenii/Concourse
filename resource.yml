@@ -10,5 +10,5 @@ image_resource:
   #  - name: timer
 
 run:
-  path: /sh
+  path: sh
   args: ["./concourse/web-task.sh"]
