@@ -9,5 +9,7 @@ inputs:
   - name: resource-tutorial
 
 run:
-  path: sh
-  args: ["./resource-tutorial/web-task.sh"]
+  path: echo
+  args: [deployed!]
+        #  path: sh
+        #  args: ["./resource-tutorial/web-task.sh"]
