@@ -3,7 +3,7 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: yenii/helloyeeun}
+  source: {repository: yenii/helloyeeun:0.1}
 
   #inputs:
   #  - name: resource-tutorial
