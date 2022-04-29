@@ -6,7 +6,7 @@ RUN apt-get update && \
 
 # Install apache and write hello world message
 RUN echo 'Hello World!' > /var/www/html/index.html
-
+RUN service apache2 start
 ## Configure apache
 #RUN echo '. /etc/apache2/envvars' > /root/run_apache.sh && \
 # echo 'mkdir -p /var/run/apache2' >> /root/run_apache.sh && \
